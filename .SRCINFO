@@ -1,7 +1,7 @@
 pkgbase = kodi
 	pkgdesc = A software media player and entertainment hub for digital media
 	pkgver = 14.0
-	pkgrel = 0.2
+	pkgrel = 0.3
 	url = http://kodi.tv
 	install = kodi.install
 	arch = i686
@@ -71,6 +71,7 @@ pkgbase = kodi
 	optdepends = unzip: Archives support
 	optdepends = upower: Display battery level
 	provides = xbmc
+	conflicts = xbmc
 	replaces = xbmc
 	source = kodi-14.0-Helix.tar.gz::https://github.com/xbmc/xbmc/archive/14.0-Helix.tar.gz
 	sha256sums = 11746d95cc59361f36ce6ea9d0d36bbd9ec3376e991f5ec1720f8ff740b91192
