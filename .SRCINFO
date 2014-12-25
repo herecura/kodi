@@ -1,6 +1,6 @@
 pkgbase = kodi
 	pkgver = 14.0
-	pkgrel = 0.5
+	pkgrel = 0.6
 	url = http://kodi.tv
 	arch = i686
 	arch = x86_64
@@ -52,6 +52,7 @@ pkgbase = kodi
 	makedepends = libmodplug
 	makedepends = sdl2
 	makedepends = sdl_image
+	makedepends = nss-mdns
 	source = kodi-14.0-Helix.tar.gz::https://github.com/xbmc/xbmc/archive/14.0-Helix.tar.gz
 	sha256sums = 11746d95cc59361f36ce6ea9d0d36bbd9ec3376e991f5ec1720f8ff740b91192
 
