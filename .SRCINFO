@@ -1,6 +1,6 @@
 pkgbase = kodi
 	pkgver = 14.0
-	pkgrel = 0.7
+	pkgrel = 0.8
 	url = http://kodi.tv
 	arch = i686
 	arch = x86_64
@@ -53,7 +53,7 @@ pkgbase = kodi
 	makedepends = sdl2
 	makedepends = sdl_image
 	makedepends = nss-mdns
-	makedepends = libsquish
+	makedepends = cwiid
 	source = kodi-14.0-Helix.tar.gz::https://github.com/xbmc/xbmc/archive/14.0-Helix.tar.gz
 	sha256sums = 11746d95cc59361f36ce6ea9d0d36bbd9ec3376e991f5ec1720f8ff740b91192
 
@@ -100,8 +100,7 @@ pkgname = kodi
 	conflicts = xbmc
 	replaces = xbmc
 
-pkgname = kodi-texturepacker
-	pkgdesc = A tool to compile all images used in a skin into a single file.
-	depends = lzo
-	depends = sdl_image
+pkgname = kodi-eventclients
+	pkgdesc = Kodi Event Clients
+	depends = cwiid
 
