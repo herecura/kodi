@@ -1,6 +1,6 @@
 pkgbase = kodi
 	pkgver = 14.0
-	pkgrel = 1.5
+	pkgrel = 1.6
 	url = http://kodi.tv
 	arch = i686
 	arch = x86_64
