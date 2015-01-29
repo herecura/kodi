@@ -1,6 +1,6 @@
 pkgbase = kodi
 	pkgver = 14.0
-	pkgrel = 1
+	pkgrel = 1.5
 	url = http://kodi.tv
 	arch = i686
 	arch = x86_64
@@ -96,6 +96,7 @@ pkgname = kodi
 	optdepends = unrar: Archives support
 	optdepends = unzip: Archives support
 	optdepends = upower: Display battery level
+	optdepends = lsb-release: log distro information in crashlog
 	provides = xbmc
 	conflicts = xbmc
 	replaces = xbmc
