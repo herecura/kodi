@@ -1,6 +1,6 @@
 pkgbase = kodi
-	pkgver = 14.1
-	pkgrel = 3
+	pkgver = 14.2
+	pkgrel = 1
 	url = http://kodi.tv
 	arch = i686
 	arch = x86_64
@@ -54,8 +54,8 @@ pkgbase = kodi
 	makedepends = upower
 	makedepends = yajl
 	makedepends = zip
-	source = kodi-14.1-Helix.tar.gz::https://github.com/xbmc/xbmc/archive/14.1-Helix.tar.gz
-	sha256sums = a38059e292cf8523918834e49fcc2d688525ceb7951ddf7f5ee535f4147255d6
+	source = kodi-14.2-Helix.tar.gz::https://github.com/xbmc/xbmc/archive/14.2-Helix.tar.gz
+	sha256sums = d9cb8590430a925fb789a5beb4da2695cdcd2d2500dd31126f3b77b31aa267f4
 
 pkgname = kodi
 	pkgdesc = A software media player and entertainment hub for digital media
