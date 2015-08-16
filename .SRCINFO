@@ -1,5 +1,5 @@
 pkgbase = kodi
-	pkgver = 15.0
+	pkgver = 15.1
 	pkgrel = 1
 	url = http://kodi.tv
 	arch = i686
@@ -55,8 +55,8 @@ pkgbase = kodi
 	makedepends = upower
 	makedepends = yajl
 	makedepends = zip
-	source = kodi-15.0-Isengard.tar.gz::https://github.com/xbmc/xbmc/archive/15.0-Isengard.tar.gz
-	sha256sums = 27dba173cfe74b323f4dbaa72ae2bfe5961f76c27bddcd5210253be91cae0dff
+	source = kodi-15.1-Isengard.tar.gz::https://github.com/xbmc/xbmc/archive/15.1-Isengard.tar.gz
+	sha256sums = 72b2610d8fbff807128d74429f25bf6716ba880c27c2c5d9fad012ec7fc70705
 
 pkgname = kodi
 	pkgdesc = A software media player and entertainment hub for digital media
