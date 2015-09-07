@@ -1,6 +1,6 @@
 pkgbase = kodi
 	pkgver = 15.1
-	pkgrel = 1
+	pkgrel = 2
 	url = http://kodi.tv
 	arch = i686
 	arch = x86_64
@@ -70,6 +70,7 @@ pkgname = kodi
 	depends = fribidi
 	depends = glew
 	depends = hicolor-icon-theme
+	depends = libass
 	depends = libcdio
 	depends = libjpeg-turbo
 	depends = libmariadbclient
