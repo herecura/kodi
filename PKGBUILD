@@ -22,7 +22,7 @@ pkgbase=kodi
 pkgname=('kodi' 'kodi-eventclients' 'kodi-tools-texturepacker' 'kodi-dev')
 pkgver=17.0
 _codename=Krypton
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url="http://kodi.tv"
 license=('GPL2')
@@ -63,11 +63,11 @@ build() {
 package_kodi() {
   pkgdesc="A software media player and entertainment hub for digital media"
   depends=(
-    'python2-pillow' 'python2-pybluez' 'python2-simplejson' 'xorg-xdpyinfo'
-    'bluez-libs' 'fribidi' 'freetype2' 'glew' 'hicolor-icon-theme' 'libcdio'
-    'libjpeg-turbo' 'libmariadbclient' 'libmicrohttpd' 'libpulse' 'libssh'
-    'libva' 'libvdpau' 'libxrandr' 'libxslt' 'lzo' 'smbclient' 'taglib' 'tinyxml'
-    'yajl' 'mesa' 'desktop-file-utils'
+    'python2-pillow' 'python2-simplejson' 'xorg-xdpyinfo' 'bluez-libs'
+    'fribidi' 'freetype2' 'glew' 'hicolor-icon-theme' 'libcdio' 'libjpeg-turbo'
+    'libmariadbclient' 'libmicrohttpd' 'libpulse' 'libssh' 'libva' 'libvdpau'
+    'libxrandr' 'libxslt' 'lzo' 'smbclient' 'taglib' 'tinyxml' 'yajl' 'mesa'
+    'desktop-file-utils'
   )
   optdepends=(
     'afpfs-ng: Apple shares support'
