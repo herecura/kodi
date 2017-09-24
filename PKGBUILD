@@ -22,7 +22,7 @@ pkgbase=kodi
 pkgname=('kodi' 'kodi-eventclients' 'kodi-tools-texturepacker' 'kodi-dev')
 pkgver=17.4
 _codename=Krypton
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url="http://kodi.tv"
 license=('GPL2')
@@ -57,6 +57,8 @@ build() {
     -DCMAKE_INSTALL_LIBDIR=/usr/lib \
     -DENABLE_EVENTCLIENTS=ON \
     -DLIRC_DEVICE=/run/lirc/lircd \
+    -DENABLE_INTERNAL_FFMPEG="no" \
+    -DWITH_FFMPEG="yes" \
     ../"xbmc-$pkgver-$_codename"/project/cmake
   make
   make preinstall
