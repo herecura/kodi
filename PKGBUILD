@@ -22,7 +22,7 @@ pkgbase=kodi
 pkgname=('kodi' 'kodi-eventclients' 'kodi-tools-texturepacker' 'kodi-dev')
 pkgver=17.5
 _codename=Krypton
-pkgrel=2
+pkgrel=3
 arch=('i686' 'x86_64')
 url="http://kodi.tv"
 license=('GPL2')
@@ -33,7 +33,7 @@ makedepends=(
   'libmicrohttpd' 'libmodplug' 'libmpeg2' 'libnfs' 'libplist' 'libxrandr'
   'libxslt' 'lzo' 'mesa' 'nasm' 'nss-mdns' 'python2-pillow' 'python2-pybluez'
   'python2-simplejson' 'rtmpdump' 'shairplay' 'smbclient' 'swig' 'taglib'
-  'tinyxml' 'unzip' 'upower' 'yajl' 'zip'
+  'tinyxml' 'unzip' 'upower' 'yajl' 'zip' 'speex'
 )
 _libdvdcss_commit="2f12236bc1c92f73c21e973363f79eb300de603f"
 _libdvdnav_commit="981488f7f27554b103cca10c1fbeba027396c94a"
@@ -92,7 +92,7 @@ package_kodi() {
     'bluez-libs' 'desktop-file-utils' 'glew' 'hicolor-icon-theme'
     'libcdio' 'libmariadbclient' 'libmicrohttpd' 'libxrandr' 'libxslt' 'lzo'
     'mesa' 'python2-pillow' 'python2-simplejson' 'smbclient' 'taglib' 'tinyxml'
-    'xorg-xdpyinfo' 'yajl' 'libass'
+    'xorg-xdpyinfo' 'yajl' 'libass' 'speex'
   )
   optdepends=(
     'afpfs-ng: Apple shares support'
