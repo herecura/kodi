@@ -20,7 +20,7 @@
 pkgbase=kodi
 pkgname=('kodi' 'kodi-eventclients' 'kodi-tools-texturepacker' 'kodi-dev')
 pkgver=18.0rc1
-pkgrel=1
+pkgrel=2
 arch=('x86_64')
 url="http://kodi.tv"
 license=('GPL2')
@@ -122,11 +122,12 @@ build() {
 package_kodi() {
   pkgdesc="A software media player and entertainment hub for digital media"
   depends=(
-    'bluez-libs' 'desktop-file-utils' 'freetype2' 'fribidi'
+    'bluez-libs' 'curl' 'desktop-file-utils' 'freetype2' 'fribidi'
     'hicolor-icon-theme' 'libass' 'libcdio' 'libjpeg-turbo' 'libmariadbclient'
     'libmicrohttpd' 'libpulse' 'libssh' 'libva' 'libvdpau' 'libxrandr'
     'libxslt' 'lzo' 'mesa' 'python2-pillow' 'python2-simplejson' 'smbclient'
     'speex' 'taglib' 'tinyxml' 'xorg-xdpyinfo' 'yajl' 'libbluray'
+    'libnfs' 'lirc' 'libcec'
   )
   optdepends=(
     'afpfs-ng: Apple shares support'
@@ -134,8 +135,6 @@ package_kodi() {
     'python2-pybluez: Bluetooth support'
     'libnfs: NFS shares support'
     'libplist: AirPlay support'
-    'libcec: Pulse-Eight USB-CEC adapter support'
-    'lirc: Remote controller support'
     'lsb-release: log distro information in crashlog'
     'pulseaudio: PulseAudio support'
     'shairplay: AirPlay support'
