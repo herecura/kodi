@@ -19,8 +19,8 @@
 
 pkgbase=kodi
 pkgname=('kodi' 'kodi-eventclients' 'kodi-tools-texturepacker' 'kodi-dev')
-pkgver=18.0rc1
-pkgrel=2
+pkgver=18.0rc2
+pkgrel=1
 arch=('x86_64')
 url="http://kodi.tv"
 license=('GPL2')
@@ -69,7 +69,7 @@ noextract=(
   "$pkgbase-fstrcmp-$_fstrcmp_version.tar.gz"
   "$pkgbase-flatbuffers-$_flatbuffers_version.tar.gz"
 )
-sha512sums=('3adaa6e4405234fe95590b48a0d947491425a1a33b2dcc7d1d6df551b9dd6b4787b51916d8707a8b943e7a713947a44970f9695b5977ef8effd5354133bf97ad'
+sha512sums=('2f5bba021221cdc45242abc90a993dd033c2d7839f1031159869ac7a777a0675324ec2858868ff5060b16a8d5f367a6135a20ac570a099e907032678c91eac0c'
             '5185dbdbeb1bd13ea9d8723f1f4ab599d6f3102f5ba1096cd085aa1cda252c045f327c719227bba8e1b742352ade5e335106c8d0c1637a5a6b93ce661620dd7e'
             '11c93eaacd156f8fd7dec7c43d366438b201f31ad55b2870463a9e286912b6ada08882319a021fb7992190f87b909a49f2b83e0321cc17aedc29f7fe5898fa72'
             'b3419ba0a1a2dd70f1bb6236afdfe1c6e88c9ad4264198b289e3bba9375e077cecf7f89848c7b09debaa445327f3507101f3d157e692f7a7163b2bb52643e1e7'
@@ -165,7 +165,7 @@ package_kodi() {
 }
 
 # kodi-eventclients
-# components: kodi-eventclients-common kodi-eventclients-ps3 kodi-eventclients-wiiremote kodi-eventclients-xbmc-send
+# components: kodi-eventclients-common kodi-eventclients-ps3 kodi-eventclients-wiiremote kodi-eventclients-kodi-send
 
 package_kodi-eventclients() {
   pkgdesc="Kodi Event Clients"
@@ -175,7 +175,7 @@ package_kodi-eventclients() {
   _components=(
     'kodi-eventclients-common'
     'kodi-eventclients-ps3'
-    'kodi-eventclients-xbmc-send'
+    'kodi-eventclients-kodi-send'
   )
 
   cd kodi-build
