@@ -19,7 +19,7 @@
 
 pkgbase=kodi
 pkgname=('kodi' 'kodi-eventclients' 'kodi-tools-texturepacker' 'kodi-dev')
-pkgver=18.0rc2
+pkgver=18.0rc3
 pkgrel=1
 arch=('x86_64')
 url="http://kodi.tv"
@@ -69,7 +69,7 @@ noextract=(
   "$pkgbase-fstrcmp-$_fstrcmp_version.tar.gz"
   "$pkgbase-flatbuffers-$_flatbuffers_version.tar.gz"
 )
-sha512sums=('2f5bba021221cdc45242abc90a993dd033c2d7839f1031159869ac7a777a0675324ec2858868ff5060b16a8d5f367a6135a20ac570a099e907032678c91eac0c'
+sha512sums=('622e3fff01e8d856bb524339796410d3fc3226539ae91c69a367464e8f5aeb28ca3ffd605dc4a4f9944e4cc59a1949d7da6fec70175d978a44f3b5bbb59190c3'
             '5185dbdbeb1bd13ea9d8723f1f4ab599d6f3102f5ba1096cd085aa1cda252c045f327c719227bba8e1b742352ade5e335106c8d0c1637a5a6b93ce661620dd7e'
             '11c93eaacd156f8fd7dec7c43d366438b201f31ad55b2870463a9e286912b6ada08882319a021fb7992190f87b909a49f2b83e0321cc17aedc29f7fe5898fa72'
             'b3419ba0a1a2dd70f1bb6236afdfe1c6e88c9ad4264198b289e3bba9375e077cecf7f89848c7b09debaa445327f3507101f3d157e692f7a7163b2bb52643e1e7'
@@ -135,7 +135,6 @@ package_kodi() {
     'python2-pybluez: Bluetooth support'
     'libnfs: NFS shares support'
     'libplist: AirPlay support'
-    'lsb-release: log distro information in crashlog'
     'pulseaudio: PulseAudio support'
     'shairplay: AirPlay support'
     'unrar: Archives support'
