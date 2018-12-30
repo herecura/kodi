@@ -19,7 +19,7 @@
 
 pkgbase=kodi
 pkgname=('kodi' 'kodi-eventclients' 'kodi-tools-texturepacker' 'kodi-dev')
-pkgver=18.0rc3
+pkgver=18.0rc4
 pkgrel=1
 arch=('x86_64')
 url="http://kodi.tv"
@@ -69,7 +69,7 @@ noextract=(
   "$pkgbase-fstrcmp-$_fstrcmp_version.tar.gz"
   "$pkgbase-flatbuffers-$_flatbuffers_version.tar.gz"
 )
-sha512sums=('622e3fff01e8d856bb524339796410d3fc3226539ae91c69a367464e8f5aeb28ca3ffd605dc4a4f9944e4cc59a1949d7da6fec70175d978a44f3b5bbb59190c3'
+sha512sums=('cec2af70e6babed79ed649846342cbcfe979ad90a4ef4dde250e114477991c48dcfffac56a6234dc16913c9896a9a31337ebbb19488f0abf68e6c1f410d12607'
             '5185dbdbeb1bd13ea9d8723f1f4ab599d6f3102f5ba1096cd085aa1cda252c045f327c719227bba8e1b742352ade5e335106c8d0c1637a5a6b93ce661620dd7e'
             '11c93eaacd156f8fd7dec7c43d366438b201f31ad55b2870463a9e286912b6ada08882319a021fb7992190f87b909a49f2b83e0321cc17aedc29f7fe5898fa72'
             'b3419ba0a1a2dd70f1bb6236afdfe1c6e88c9ad4264198b289e3bba9375e077cecf7f89848c7b09debaa445327f3507101f3d157e692f7a7163b2bb52643e1e7'
