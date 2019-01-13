@@ -19,7 +19,7 @@
 
 pkgbase=kodi
 pkgname=('kodi' 'kodi-eventclients' 'kodi-tools-texturepacker' 'kodi-dev')
-pkgver=18.0rc4
+pkgver=18.0rc5.2
 pkgrel=1
 arch=('x86_64')
 url="http://kodi.tv"
@@ -40,7 +40,7 @@ _codename=Leia
 _libdvdcss_version="1.4.2-$_codename-Beta-5"
 _libdvdnav_version="6.0.0-$_codename-Alpha-3"
 _libdvdread_version="6.0.0-$_codename-Alpha-3"
-_ffmpeg_version="4.0.3-$_codename-Beta5"
+_ffmpeg_version="4.0.3-$_codename-RC5"
 _fmt_version="5.1.0"
 _crossguid_version="8f399e8bd4"
 _fstrcmp_version="0.7.D001"
@@ -69,11 +69,11 @@ noextract=(
   "$pkgbase-fstrcmp-$_fstrcmp_version.tar.gz"
   "$pkgbase-flatbuffers-$_flatbuffers_version.tar.gz"
 )
-sha512sums=('cec2af70e6babed79ed649846342cbcfe979ad90a4ef4dde250e114477991c48dcfffac56a6234dc16913c9896a9a31337ebbb19488f0abf68e6c1f410d12607'
+sha512sums=('bee9f72bb37f0932d62a30c845902d31687f817fca587fc5a8bcf0eb302a2595a0ddf9b1114c89d8f76cb2b194746ad701fdb218ad6f6dcc4526ec02fbac7ff4'
             '5185dbdbeb1bd13ea9d8723f1f4ab599d6f3102f5ba1096cd085aa1cda252c045f327c719227bba8e1b742352ade5e335106c8d0c1637a5a6b93ce661620dd7e'
             '11c93eaacd156f8fd7dec7c43d366438b201f31ad55b2870463a9e286912b6ada08882319a021fb7992190f87b909a49f2b83e0321cc17aedc29f7fe5898fa72'
             'b3419ba0a1a2dd70f1bb6236afdfe1c6e88c9ad4264198b289e3bba9375e077cecf7f89848c7b09debaa445327f3507101f3d157e692f7a7163b2bb52643e1e7'
-            '0818bc0a2e2264686008603423d9b173e7d6fcbe9890d399cd4375bb6aff6eda7f2ebd03af1dab5cfbdd320d532753acc164ae86308d408d8ad6152dcda261b6'
+            'a95eaeca26baa9dca4343f1ed6dc068e0800199997a5ad1a28664061e533aa8b0e6d0ad53c18009e21bdd09177b7eda8e59a5a98a10f0f6a081cf03803ee9277'
             'b759a718353254fa8cd981e483bf01a45af0fc76901216404ace5e47f5d3edf43d42422184e5413c221e49832322fdf60d1860e8ec87349c674511064b31e5d6'
             '2682d63609d3dcdfcd8136be632e45df26ad88ce93b9c49745cf728bbd2e6254a7b05c8b059ab581d532372e504206a525a52564b64d076dfdae9c965a09fd16'
             'aaeb0227afd5ada5955cbe6a565254ff88d2028d677d199c00e03b7cb5de1f2c69b18e6e8b032e452350a8eda7081807b01765adbeb8476eaf803d9de6e5509c'
