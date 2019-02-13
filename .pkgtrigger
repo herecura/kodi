@@ -16,6 +16,19 @@ dependencypackages=(
     'kodi-addon-visualization-shadertoy'
     'kodi-addon-visualization-spectrum'
     'kodi-addon-visualization-waveform'
+    'kodi-addon-game-libretro'
+    'kodi-addon-game-libretro-beetle-psx'
+    'kodi-addon-game-libretro-desmume'
+    'kodi-addon-game-libretro-gambatte'
+    'kodi-addon-game-libretro-melonds'
+    'kodi-addon-game-libretro-mgba'
+    'kodi-addon-game-libretro-mupen64plus'
+    'kodi-addon-game-libretro-nestopia'
+    'kodi-addon-game-libretro-parallel-n64'
+    'kodi-addon-game-libretro-reicast'
+    'kodi-addon-game-libretro-scummvm'
+    'kodi-addon-game-libretro-snes9x'
+    'kodi-addon-game-libretro-yabause'
 )
 
 pkgupdate=$(cat <<EOF

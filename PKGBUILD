@@ -20,9 +20,9 @@
 pkgbase=kodi
 pkgname=('kodi' 'kodi-eventclients' 'kodi-tools-texturepacker' 'kodi-dev')
 pkgver=18.0
-pkgrel=1
+pkgrel=2
 arch=('x86_64')
-url="http://kodi.tv"
+url="https://kodi.tv"
 license=('GPL2')
 makedepends=(
   'afpfs-ng' 'bluez-libs' 'cmake' 'curl' 'doxygen' 'glew'
