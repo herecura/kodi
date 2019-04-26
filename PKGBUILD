@@ -19,23 +19,23 @@
 
 pkgbase=kodi
 pkgname=(
-  'kodi' 'kodi-x11' 'kodi-wayland' 'kodi-gbm'
+  'kodi' 'kodi-bin' 'kodi-wayland' 'kodi-gbm'
   'kodi-eventclients' 'kodi-tools-texturepacker' 'kodi-dev'
 )
 pkgver=18.2
-pkgrel=1
+pkgrel=2
 arch=('x86_64')
 url="https://kodi.tv"
 license=('GPL2')
 makedepends=(
   'afpfs-ng' 'bluez-libs' 'cmake' 'curl' 'doxygen' 'glew'
-  'gperf' 'hicolor-icon-theme' 'jasper' 'java-runtime' 'libaacs' 'libass'
+  'gperf' 'hicolor-icon-theme' 'java-runtime' 'libaacs' 'libass'
   'libbluray' 'libcdio' 'libcec' 'libgl' 'mariadb-libs' 'libmicrohttpd'
-  'libmodplug' 'libmpeg2' 'libnfs' 'libplist' 'libpulse' 'libssh' 'libva'
-  'libvdpau' 'libxrandr' 'libxslt' 'lirc' 'lzo' 'mesa' 'nasm' 'nss-mdns'
+  'libmodplug' 'libmpeg2' 'libnfs' 'libplist' 'libpulse' 'libva'
+  'libvdpau' 'libxrandr' 'libxslt' 'lirc' 'lzo' 'mesa' 'nasm'
   'python2-pycryptodome' 'python2-pillow' 'python2-pybluez' 'python2-simplejson'
-  'rtmpdump' 'shairplay' 'smbclient' 'swig' 'taglib' 'tinyxml' 'unzip'
-  'upower' 'zip' 'git' 'giflib' 'rapidjson' 'ghostscript'
+  'shairplay' 'smbclient' 'taglib' 'tinyxml' 'swig'
+  'upower' 'giflib' 'rapidjson' 'ghostscript'
   # wayland
   'wayland-protocols' 'waylandpp' 'libxkbcommon'
   # gbm
@@ -124,7 +124,7 @@ build() {
     -DFSTRCMP_URL="$srcdir/$pkgbase-fstrcmp-$_fstrcmp_version.tar.gz" \
     -DFLATBUFFERS_URL="$srcdir/$pkgbase-flatbuffers-$_flatbuffers_version.tar.gz" \
     ../"xbmc-$pkgver-$_codename"
-  make 
+  make
   make preinstall
 
   msg2 "building kodi-wayland"
@@ -148,7 +148,7 @@ build() {
     -DCORE_PLATFORM_NAME=wayland \
     -DWAYLAND_RENDER_SYSTEM=gl \
     ../"xbmc-$pkgver-$_codename"
-  make 
+  make
   make preinstall
 
   msg2 "building kodi-gbm"
@@ -172,7 +172,7 @@ build() {
     -DCORE_PLATFORM_NAME=gbm \
     -DGBM_RENDER_SYSTEM=gles \
     ../"xbmc-$pkgver-$_codename"
-  make 
+  make
   make preinstall
 }
 
@@ -184,7 +184,7 @@ package_kodi() {
   depends=(
     'desktop-file-utils' 'hicolor-icon-theme' 'mesa' 'python2-pycryptodome'
     'python2-pillow' 'python2-simplejson' 'xorg-xdpyinfo'
-    'KODI-BIN'
+    'kodi-bin'
   )
   optdepends=(
     'afpfs-ng: Apple shares support'
@@ -193,8 +193,6 @@ package_kodi() {
     'libplist: AirPlay support'
     'pulseaudio: PulseAudio support'
     'shairplay: AirPlay support'
-    'unrar: Archives support'
-    'unzip: Archives support'
     'upower: Display battery level'
   )
   provides=('xbmc')
@@ -226,9 +224,8 @@ package_kodi() {
 # kodi-x11
 # components: kodi-bin
 
-package_kodi-x11() {
+package_kodi-bin() {
   pkgdesc="x11 kodi binary"
-  provides=('KODI-BIN')
   depends=(
     'bluez-libs' 'curl' 'lcms2' 'libass' 'libbluray' 'libcdio' 'libcec'
     'libmicrohttpd' 'libnfs' 'libpulse' 'libva' 'libvdpau' 'libxrandr'
@@ -246,7 +243,7 @@ package_kodi-x11() {
 
 package_kodi-wayland() {
   pkgdesc="wayland kodi binary"
-  provides=('KODI-BIN')
+  provides=('kodi-bin')
   depends=(
     'bluez-libs' 'curl' 'lcms2' 'libass' 'libbluray' 'libcdio' 'libcec'
     'libmicrohttpd' 'libnfs' 'libpulse' 'libva' 'libxkbcommon' 'libxslt'
@@ -263,7 +260,7 @@ package_kodi-wayland() {
 
 package_kodi-gbm() {
   pkgdesc="gbm kodi binary"
-  provides=('KODI-BIN') 
+  provides=('kodi-bin')
   depends=(
     'bluez-libs' 'curl' 'lcms2' 'libass' 'libbluray' 'libcdio' 'libcec'
     'libinput' 'libmicrohttpd' 'libnfs' 'libpulse' 'libva' 'libxkbcommon'
