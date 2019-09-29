@@ -23,7 +23,7 @@ pkgname=(
   'kodi-eventclients' 'kodi-tools-texturepacker' 'kodi-dev'
 )
 pkgver=18.4
-pkgrel=1
+pkgrel=2
 arch=('x86_64')
 url="https://kodi.tv"
 license=('GPL2')
@@ -189,7 +189,7 @@ build() {
 package_kodi() {
   pkgdesc="A software media player and entertainment hub for digital media"
   depends=(
-    'desktop-file-utils' 'hicolor-icon-theme' 'mesa' 'python2-pycryptodome'
+    'desktop-file-utils' 'hicolor-icon-theme' 'mesa' 'python2-pycryptodomex'
     'python2-pillow' 'python2-simplejson' 'xorg-xdpyinfo'
     'kodi-bin'
   )

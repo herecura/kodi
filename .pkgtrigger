@@ -29,6 +29,8 @@ dependencypackages=(
     'kodi-addon-game-libretro-scummvm'
     'kodi-addon-game-libretro-snes9x'
     'kodi-addon-game-libretro-yabause'
+    'kodi-addon-inputstream-adaptive'
+    'kodi-addon-inputstream-rtmp'
 )
 
 pkgupdate=$(cat <<EOF
