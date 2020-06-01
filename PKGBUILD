@@ -22,8 +22,8 @@ pkgname=(
   'kodi' 'kodi-x11' 'kodi-wayland' 'kodi-gbm'
   'kodi-eventclients' 'kodi-tools-texturepacker' 'kodi-dev'
 )
-pkgver=18.7
-pkgrel=0.2
+pkgver=18.7.1
+pkgrel=1
 arch=('x86_64')
 url="https://kodi.tv"
 license=('GPL2')
@@ -47,7 +47,6 @@ _codename=Leia
 _libdvdcss_version="1.4.2-$_codename-Beta-5"
 _libdvdnav_version="6.0.0-$_codename-Alpha-3"
 _libdvdread_version="6.0.0-$_codename-Alpha-3"
-#_ffmpeg_version="4.0.4-$_codename-18.4"
 _ffmpeg_version="4.2.2-Matrix-Alpha1"
 _fmt_version="6.1.2"
 _spdlog_version="1.5.0"
@@ -80,7 +79,7 @@ noextract=(
   "$pkgbase-fstrcmp-$_fstrcmp_version.tar.gz"
   "$pkgbase-flatbuffers-$_flatbuffers_version.tar.gz"
 )
-sha512sums=('33f6e1ea948e1ae6efeab23391168b5ea080f3663b653156895b00e48ce33b6b325492e84ad6caf5b46dfb725900520e9a53de17beae919704cc9c424d6203c5'
+sha512sums=('db44c2d3c998af37948ccd042932545c9d781b622dba85ec11b7dd97ec0be80f03d2687249a9483d1b2a7178179bf5a003f8d0f4c0e55c9f2a41f67a27a19e0f'
             '5185dbdbeb1bd13ea9d8723f1f4ab599d6f3102f5ba1096cd085aa1cda252c045f327c719227bba8e1b742352ade5e335106c8d0c1637a5a6b93ce661620dd7e'
             '11c93eaacd156f8fd7dec7c43d366438b201f31ad55b2870463a9e286912b6ada08882319a021fb7992190f87b909a49f2b83e0321cc17aedc29f7fe5898fa72'
             'b3419ba0a1a2dd70f1bb6236afdfe1c6e88c9ad4264198b289e3bba9375e077cecf7f89848c7b09debaa445327f3507101f3d157e692f7a7163b2bb52643e1e7'
@@ -248,6 +247,7 @@ package_kodi() {
 package_kodi-x11() {
   pkgdesc="x11 kodi binary"
   provides=('KODI-BIN')
+  replaces=('kodi-bin')
   depends=(
     'bluez-libs' 'curl' 'lcms2' 'libass' 'libbluray' 'libcdio' 'libcec'
     'libmicrohttpd' 'libnfs' 'libpulse' 'libva' 'libvdpau' 'libxrandr'
