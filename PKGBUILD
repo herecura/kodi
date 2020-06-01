@@ -19,11 +19,11 @@
 
 pkgbase=kodi
 pkgname=(
-  'kodi' 'kodi-bin' 'kodi-wayland' 'kodi-gbm'
+  'kodi' 'kodi-x11' 'kodi-wayland' 'kodi-gbm'
   'kodi-eventclients' 'kodi-tools-texturepacker' 'kodi-dev'
 )
 pkgver=18.7
-pkgrel=0.1
+pkgrel=0.2
 arch=('x86_64')
 url="https://kodi.tv"
 license=('GPL2')
@@ -203,7 +203,7 @@ package_kodi() {
   depends=(
     'desktop-file-utils' 'hicolor-icon-theme' 'mesa' 'python2-pycryptodomex'
     'python2-pillow' 'python2-simplejson' 'xorg-xdpyinfo'
-    'kodi-bin'
+    'KODI-BIN'
   )
   optdepends=(
     'afpfs-ng: Apple shares support'
@@ -245,8 +245,9 @@ package_kodi() {
 # kodi-x11
 # components: kodi-bin
 
-package_kodi-bin() {
+package_kodi-x11() {
   pkgdesc="x11 kodi binary"
+  provides=('KODI-BIN')
   depends=(
     'bluez-libs' 'curl' 'lcms2' 'libass' 'libbluray' 'libcdio' 'libcec'
     'libmicrohttpd' 'libnfs' 'libpulse' 'libva' 'libvdpau' 'libxrandr'
@@ -264,7 +265,7 @@ package_kodi-bin() {
 
 package_kodi-wayland() {
   pkgdesc="wayland kodi binary"
-  provides=('kodi-bin')
+  provides=('KODI-BIN')
   depends=(
     'bluez-libs' 'curl' 'lcms2' 'libass' 'libbluray' 'libcdio' 'libcec'
     'libmicrohttpd' 'libnfs' 'libpulse' 'libva' 'libxkbcommon' 'libxslt'
@@ -281,7 +282,7 @@ package_kodi-wayland() {
 
 package_kodi-gbm() {
   pkgdesc="gbm kodi binary"
-  provides=('kodi-bin')
+  provides=('KODI-BIN')
   depends=(
     'bluez-libs' 'curl' 'lcms2' 'libass' 'libbluray' 'libcdio' 'libcec'
     'libinput' 'libmicrohttpd' 'libnfs' 'libpulse' 'libva' 'libxkbcommon'
